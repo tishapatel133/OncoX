@@ -1,0 +1,44 @@
+
+
+ONCO-GPT-X CLINICAL ANALYSIS REPORT
+
+====================================
+
+Image: ISIC_0833889
+
+
+
+1. CLASSIFICATION
+
+   Diagnosis: BENIGN
+
+   Melanoma probability: 0.093
+
+   Confidence: 90.7%
+
+
+
+2. SEGMENTATION
+
+   Lesion area: 17375 pixels (26.5% of image)
+
+   Perimeter: 585.9 pixels
+
+
+
+3. EXPLAINABILITY
+
+   Grad-CAM heatmap highlights regions driving the classification.
+
+   Visual output saved.
+
+
+
+4. COUNTERFACTUAL GENERATION
+
+   Generated synthetic images showing alternative diagnoses
+
+   for clinical comparison.
+
+====================================
+

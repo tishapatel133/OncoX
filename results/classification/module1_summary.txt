@@ -1,0 +1,57 @@
+
+============================================
+
+ONCO-GPT-X MODULE 1: CLASSIFICATION RESULTS
+
+============================================
+
+Dataset: SIIM-ISIC 2020 (33,126 images, 1.7% melanoma)
+
+Split: Patient-level (train: 26,045 / val: 3,509 / test: 3,572)
+
+
+
+MODEL COMPARISON (Validation AUC):
+
+  1. EfficientNet-B3 (original)    : 0.9147  ← Best single model
+
+  2. EfficientNet-B3 + CBAM        : 0.9035
+
+  3. Meta-Ensemble (3 models)       : 0.9075
+
+  4. Simple Average Ensemble        : 0.9054
+
+  5. SwinV2-Tiny                    : 0.8829
+
+  6. PVTv2-B2                       : 0.8768
+
+
+
+META-ENSEMBLE WEIGHTS: [9.38, 3.17, 4.84]
+
+  EfficientNet+CBAM: 9.38 (highest trust)
+
+  SwinV2: 3.17
+
+  PVTv2: 4.84
+
+
+
+CHECKPOINTS:
+
+  best_efficientnet_b3.pth (original, AUC 0.9147)
+
+  best_efficientnet_cbam.pth (AUC 0.9035)
+
+  best_swinv2.pth (AUC 0.8829)
+
+  best_pvtv2.pth (AUC 0.8768)
+
+  meta_ensemble.pkl
+
+
+
+TARGET: AUC >= 0.85  ✅ EXCEEDED (0.9147)
+
+============================================
+

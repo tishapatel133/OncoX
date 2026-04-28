@@ -1,29 +1,3 @@
 # Onco-GPT-X
-
-**An End-to-End AI Pipeline for Melanoma Analysis from Dermoscopy Images**
-
-Tisha Patel · Prof. Divya Chaudhary  
-Khoury College of Computer Sciences, Northeastern University
-
----
-
-## Overview
-
-Onco-GPT-X is a five-module deep learning pipeline for melanoma detection that integrates preprocessing, segmentation, classification, explainability, and counterfactual generation into a unified clinical decision-support system. Given a raw dermoscopy image, it produces a diagnosis, lesion boundary, visual explanation, and counterfactual comparisons in a single report.
-
-## Datasets
-
-| Dataset | Size | Purpose |
-|---|---|---|
-| SIIM-ISIC 2020 | ~33K images, 1.76% melanoma | Binary classification |
-| ISIC 2018 Task 1 | 2,594 image-mask pairs | Segmentation |
-| HAM10000 | 10,015 images, 7 classes | Counterfactual generation |
-
-## Environment
-
-- **Cluster:** Northeastern Explorer HPC (SLURM, V100/H200 GPUs)
-- **Stack:** Python 3.9, PyTorch 2.8.0, timm 1.0.24, albumentations, scikit-learn, OpenCV
-
-## Acknowledgments
-
-Prof. Divya Chaudhary (advisor), Khoury College of Computer Sciences, Northeastern University Research Computing.
+ 
+Onco-GPT-X is an end-to-end AI pipeline for melanoma analysis from dermoscopy images, developed as a research apprenticeship project at Northeastern University's Khoury College of Computer Sciences under Prof. Divya Chaudhary. The pipeline consists of five modules: (1) preprocessing via DullRazor hair removal and CLAHE contrast enhancement, (2) lesion segmentation using a PVTv2-B2 + UNet decoder trained on ISIC 2018 Task 1 (Dice: 0.9140), (3) binary melanoma classification using EfficientNet-B3 with Focal Loss and 5-fold patient-level cross-validation on SIIM-ISIC 2020 (best mean AUC: 0.9170), (4) Grad-CAM explainability across all classification models, and (5) counterfactual image generation using a conditional DDPM with SDEdit on HAM10000. All training was conducted on Northeastern's Explorer HPC cluster using SLURM with V100/H200 GPUs, PyTorch 2.8.0, and timm 1.0.24.

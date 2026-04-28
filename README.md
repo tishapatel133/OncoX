@@ -27,22 +27,6 @@ Onco-GPT-X is a five-module deep learning pipeline for melanoma detection that i
 | ISIC 2018 Task 1 | 2,594 image-mask pairs | Segmentation |
 | HAM10000 | 10,015 images, 7 classes | Counterfactual generation |
 
-## Project Structure
-
-```
-/scratch/patel.tis/OncoX/
-├── src/
-│   ├── classification/
-│   ├── segmentation/
-│   ├── xai/
-│   ├── diffusion/
-│   └── integration/
-├── jobs/                  # SLURM scripts
-├── data/                  # Raw data, metadata, processed
-├── models/checkpoints/
-└── results/
-```
-
 ## Environment
 
 - **Cluster:** Northeastern Explorer HPC (SLURM, V100/H200 GPUs)

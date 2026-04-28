@@ -1,0 +1,2 @@
+AUC,F1,Sensitivity,Specificity,Precision,MCC,Accuracy,Threshold
+0.8553,0.2205,0.3182,0.9742,0.1687,0.2144,0.9636,0.23

@@ -1,0 +1,2 @@
+model,fold_aucs,mean_auc,std_auc,oof_auc,AUC,F1,Sensitivity,Specificity,Precision,MCC,Accuracy,Threshold
+swinv2_small_staged_merged,"[np.float64(0.9169201918109273), np.float64(0.9140016809912426), np.float64(0.9140959990398927), np.float64(0.906852080183967), np.float64(0.9150542388566141)]",0.9134,0.0034,0.9098,0.9098,0.5555,0.5759,0.9469,0.5365,0.5066,0.911,0.42

@@ -1,0 +1,2 @@
+model,fold_aucs,mean_auc,std_auc,oof_auc,AUC,F1,Sensitivity,Specificity,Precision,MCC,Accuracy,Threshold
+vit_small_staged_merged,"[np.float64(0.9221483351350256), np.float64(0.9197064230133124), np.float64(0.9174113427535004), np.float64(0.9015002889920205), np.float64(0.9161967367884802)]",0.9154,0.0072,0.9117,0.9117,0.5655,0.5854,0.9482,0.5469,0.5177,0.9132,0.43

@@ -1,0 +1,2 @@
+model,fold_aucs,mean_auc,std_auc,oof_auc,AUC,F1,Sensitivity,Specificity,Precision,MCC,Accuracy,Threshold
+EfficientNet-B3 + SE (merged 2019+2020),"[np.float64(0.9271818395283827), np.float64(0.9145048396280129), np.float64(0.919411955565303), np.float64(0.9073775576381796), np.float64(0.9166395745018951)]",0.917,0.0065,0.9101,0.9101,0.5693,0.5705,0.9537,0.5682,0.5232,0.9167,0.45

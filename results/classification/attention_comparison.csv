@@ -1,0 +1,2 @@
+AUC,F1,Sensitivity,Specificity,Precision,MCC,Accuracy,Experiment,Threshold
+0.8855,0.2376,0.4091,0.9665,0.1674,0.2432,0.9575,ViT-Small + MTA (novel),0.18
